@@ -20,4 +20,12 @@ public class Payloads {
                 "  \"language\": \"French-IN\"\n" +
                 "}";
     }
+
+    public static final String updatePalace(String placeId,String address,String keyValue){
+        return "{\n" +
+                "\"place_id\":\""+placeId+"\",\n" +
+                "\"address\":\""+address+"\",\n" +
+                "\"key\":\""+keyValue+"\"\n" +
+                "}";
+    }
 }
