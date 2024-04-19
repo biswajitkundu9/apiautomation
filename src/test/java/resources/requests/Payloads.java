@@ -1,4 +1,4 @@
-package files;
+package resources.requests;
 
 public class Payloads {
 	

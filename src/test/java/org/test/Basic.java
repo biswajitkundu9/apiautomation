@@ -5,8 +5,8 @@ import io.restassured.RestAssured;
 import static io.restassured.RestAssured.*;
 import static org.hamcrest.Matchers.*;
 
-import files.Payloads;
 import io.restassured.path.json.JsonPath;
+import resources.requests.Payloads;
 
 public class Basic {
 	public static void main(String[] args) {

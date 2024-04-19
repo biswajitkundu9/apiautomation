@@ -15,7 +15,7 @@ public class MockApiTestExample {
 	@BeforeClass
 	public void init() throws Exception {
 		//js = new JsonPath(MockPayloads.mockCourse());
-		js = new JsonPath(Utils.getPayLoads("\\src\\main\\java\\org\\test\\resources\\request\\mock.json"));
+		js = new JsonPath(Utils.getPayLoads("\\src\\test\\java\\resources\\requests\\mock.json"));
 	}
 
 	@Test
