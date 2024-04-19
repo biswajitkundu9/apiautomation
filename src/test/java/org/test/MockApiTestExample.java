@@ -1,10 +1,9 @@
 package org.test;
 
+import org.test.utilities.Utils;
 import org.testng.Assert;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
-
-import files.MockPayloads;
 import io.restassured.path.json.JsonPath;
 
 public class MockApiTestExample {
@@ -14,8 +13,9 @@ public class MockApiTestExample {
 	private int sum = 0;
 
 	@BeforeClass
-	public void init() {
-		js = new JsonPath(MockPayloads.mockCourse());
+	public void init() throws Exception {
+		//js = new JsonPath(MockPayloads.mockCourse());
+		js = new JsonPath(Utils.getPayLoads("\\src\\main\\java\\org\\test\\resources\\request\\mock.json"));
 	}
 
 	@Test
